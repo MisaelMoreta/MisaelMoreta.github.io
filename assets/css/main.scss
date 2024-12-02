@@ -23,3 +23,45 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+---
+.publications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Increased spacing between items */
+}
+
+.publication {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Increased spacing between image and text */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fefefe;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
+}
+
+.publication img {
+  width: 250px; /* Increased image size */
+  height: auto;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for the image */
+}
+
+.publication .description {
+  flex: 1; /* Ensures the description takes up remaining space */
+}
+
+.publication .description h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem; /* Larger title font */
+  color: #333;
+}
+
+.publication .description p {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6; /* Improved readability */
+}

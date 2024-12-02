@@ -1,4 +1,8 @@
 source 'https://rubygems.org'
+
+# Add ffi globally
+gem 'ffi', '~> 1.15.5'
+
 group :jekyll_plugins do
     gem 'classifier-reborn'
     gem 'jekyll'
